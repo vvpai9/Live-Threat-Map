@@ -72,6 +72,8 @@ Then open ```http://127.0.0.1:5500``` in your browser
 
 - If you host this on a remote server, make sure to update URLs in ```index.html```.
 
+- The backend functionalities of this project may further be increased by integrating ```geo.py```, ```ingest.py``` and ```scorer.py``` with the main workflow 
+
 ## 7. Stopping the servers
 
 Press ```CTRL + C``` in both terminals (backend and frontend) to stop.
