@@ -1,7 +1,7 @@
 # 🌍 Live Threat Map
 
 An interactive real-time cyber threat visualization built with **Python (FastAPI + Uvicorn)** on the backend and **Globe.GL (Three.js)** on the frontend.  
-Incoming security events (from your server or any source) are displayed on a 3D globe with live streaming updates using **Server-Sent Events (SSE)**.
+<br/> Incoming security events (from your server or any source) are displayed on a 3D globe with live streaming updates using **Server-Sent Events (SSE)**.
 
 ---
 
@@ -25,14 +25,14 @@ cd live-threat-map
 ## 2. Set up a virtual environment and install dependencies
 Download ```GeoLite2-City.mmdb``` file from [GeoLite](https://github.com/P3TERX/GeoLite.mmdb) and place the file in the ```backend``` folder
 
-Linux (bash)
+<br/> Linux (bash):
 ```
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-Windows PowerShell
+Windows PowerShell:
 ```
 python -m venv venv
 .\venv\Scripts\Activate.ps1
