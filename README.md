@@ -23,6 +23,8 @@ cd live-threat-map
 ```
 
 ## 2. Set up a virtual environment and install dependencies
+Download ```GeoLite2-City.mmdb``` file from [GeoLite](https://github.com/P3TERX/GeoLite.mmdb) and place the file in the ```backend``` folder
+
 Linux (bash)
 ```
 cd backend
@@ -43,7 +45,8 @@ uvicorn app:app --reload --port 8000
 ```
 
 ## 4. Run the frontend (Globe interface on port 5500)
-The frontend is a static HTML/JS page. You can serve it using Python’s built-in HTTP server. In a new instance, run:
+The frontend is a static HTML/JS page. You can serve it using Python’s built-in HTTP server. 
+<br/> In a new terminal instance, run:
 ```
 cd ..
 cd frontend
@@ -53,15 +56,15 @@ Then open ```http://127.0.0.1:5500``` in your browser
 
 ## 5. Using the Globe and Its Features
 
-- Streaming status indicator: The HUD at the top left shows connection status (green = streaming, black = disconnected).
+- **Streaming status indicator**: The HUD at the top left shows connection status (green = streaming, black = disconnected).
 
-- Threat points: When new events are received from the backend, they appear as colored points on the globe.
+- **Threat points**: When new events are received from the backend, they appear as colored points on the globe.
 
-- Tooltips: Hover or click a point to lock its information (city, country, label).
+- **Tooltips**: Hover or click a point to lock its information (city, country, label).
 
-- Auto-rotate toggle: Use the switch at the top right to enable or disable globe rotation in real time.
+- **Auto-rotate toggle**: Use the switch at the top right to enable or disable globe rotation in real time.
 
-- Dynamic updates: Data points automatically refresh without reloading the page.
+- **Dynamic updates**: Data points automatically refresh without reloading the page.
 
 ## 6. Notes
 
@@ -72,7 +75,7 @@ Then open ```http://127.0.0.1:5500``` in your browser
 ## 7. Stopping the servers
 
 Press ```CTRL + C``` in both terminals (backend and frontend) to stop.
-Deactivate the virtual environment when done:
+<br/> Deactivate the virtual environment when done:
 ```
 deactivate
 ```
