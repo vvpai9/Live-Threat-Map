@@ -3,6 +3,9 @@
 An interactive real-time cyber threat visualization built with **Python (FastAPI + Uvicorn)** on the backend and **Globe.GL (Three.js)** on the frontend.  
 <br/> Incoming security events (from your server or any source) are displayed on a 3D globe with live streaming updates using **Server-Sent Events (SSE)**.
 
+<img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/93f9f628-8ee2-4e41-83c9-71450da03c45" />
+
+
 ---
 
 ## Features
