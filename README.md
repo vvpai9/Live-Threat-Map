@@ -28,17 +28,20 @@ cd live-threat-map
 ## 2. Set up a virtual environment and install dependencies
 Download ```GeoLite2-City.mmdb``` file from [GeoLite](https://github.com/P3TERX/GeoLite.mmdb) and place it in the ```backend``` folder
 
-<br/> Linux (bash):
+<br/> Linux/macOS:
 ```
 cd backend
 python3 -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 Windows PowerShell:
 ```
+cd backend
 python -m venv venv
 .\venv\Scripts\Activate.ps1
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
