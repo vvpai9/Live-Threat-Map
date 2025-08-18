@@ -10,8 +10,8 @@ An interactive real-time cyber threat visualization built with **Python (FastAPI
 
 ## Features
 
-- **FastAPI + Uvicorn backend** serving real-time event streams on port **8000**.  
-- **Frontend globe interface** running on port **5500**, using [Globe.GL](https://github.com/vasturiano/globe.gl).  
+- **FastAPI + Uvicorn backend** serving real-time event streams.  
+- **Frontend globe interface** using [Globe.GL](https://github.com/vasturiano/globe.gl).  
 - **Live threat visualization** with color-coded points and tooltips.  
 - **Auto-rotate toggle** to control globe rotation dynamically.  
 - **Lightweight setup** using virtual environments for Python dependencies.
@@ -20,13 +20,13 @@ An interactive real-time cyber threat visualization built with **Python (FastAPI
 
 ## 1. Clone the repository
 
-```bash/PowerShell
+```
 git clone https://github.com/vvpai9/live-threat-map.git
 cd live-threat-map
 ```
 
 ## 2. Set up a virtual environment and install dependencies
-Download ```GeoLite2-City.mmdb``` file from [GeoLite](https://github.com/P3TERX/GeoLite.mmdb) and place the file in the ```backend``` folder
+Download ```GeoLite2-City.mmdb``` file from [GeoLite](https://github.com/P3TERX/GeoLite.mmdb) and place it in the ```backend``` folder
 
 <br/> Linux (bash):
 ```
@@ -42,12 +42,12 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## 3. Run the backend (FastAPI + Uvicorn on port 8000)
+## 3. Run the backend (FastAPI + Uvicorn)
 ```
 uvicorn app:app --reload --port 8000
 ```
 
-## 4. Run the frontend (Globe interface on port 5500)
+## 4. Run the frontend (Globe interface)
 The frontend is a static HTML/JS page. You can serve it using Python’s built-in HTTP server. 
 <br/> In a new terminal instance, run:
 ```
@@ -75,7 +75,7 @@ Then open ```http://127.0.0.1:5500``` in your browser
 
 - If you host this on a remote server, make sure to update URLs in ```index.html```.
 
-- The backend functionalities of this project may further be increased by integrating ```geo.py```, ```ingest.py``` and ```scorer.py``` with the main workflow 
+- The backend functionalities of this project may further be extended by integrating ```geo.py```, ```ingest.py``` and ```scorer.py``` with the main workflow 
 
 ## 7. Stopping the servers
 
